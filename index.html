@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add-To-List</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+
+<header>
+  
+      <nav class="navbar navbar-dark bg-primary">
+        <div class="container-fluid">
+          <span class="navbar-brand mb-0 h1">Add-To-List</span>
+        </div>
+      </nav>
+</header>
+
+<main class="container mt-5 col-6">
+    <form>
+        <div class="input-group mb-3">
+           <input id ="item" type="text" class="form-control" placeholder="Item Name" area-label ="Item Name" aria-describedby="button-addon2">   
+        <button id="add_btn" type="button" class="btn btn-outline-success mx-2" id="button-addon2">Add</button>
+    </div>
+</form>
+
+      <ul  id ="addlist" class="list-group mt-5">
+        <li class="list-group-item d-flex justify-content-between">
+            <h3 class="flex-grow-1">Item 1</h3>
+        <button class="btn btn-warning mx-3" onclick="editItem(this)">Edit</button>
+    <button class="btn btn-danger" onclick="removeItem(this)">Remove</button>
+</li>    
+      </ul>
+
+</main>
+
+<script src="list.js"></script>
+</body>
+</html>
